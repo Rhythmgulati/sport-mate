@@ -1,0 +1,100 @@
+
+body{
+   background-image: url(img/bg.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.dashboard{
+   background-color: white;
+   width: 100px;
+   height: 40px;
+   padding: 8px;
+   border-radius: 50px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+
+
+}
+
+.logo{
+
+   width: 50px;
+   height: 50px;
+}
+header{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+ }
+ main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ main h1{
+    font-size: 90px;
+    text-align: center;
+ }
+ .main-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid gray;
+    height: 100%;
+ }
+ .imagecontainer{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px 0;
+ }
+ img{
+    width: 100%;
+    object-fit: cover;
+ }
+ .main-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+ }
+ .find-btn{
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #fe3f5e, #fe5344);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+ }
+.find-btn:hover{
+   background: #fe3f5f3a;
+   transition: 500ms;
+   color: white;
+}
+
+.dashboard:hover{
+   background: linear-gradient(to right, #fe3f5e, #fe5344);
+   transition: 500ms;
+   color: white;
+}
+   
+ button:hover {
+    background-color: #fe3f5f3a;
+    transition: 500ms;
+    color: white;
+}

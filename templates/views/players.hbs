@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playerstyle.css">
+</head>
+<body>
+         <header>
+            <img src="/img/logo.png"  height="50px" width="50px" alt="">
+             <div class="dashboard" >
+                <a href="/dashboard" class="user" style="text-align: center; cursor: pointer; color: black; width: 100px; height: 50px; display: block; line-height: 50px; text-decoration: none; margin: 0 auto;">Dashboard</a>
+
+                 
+        </div>
+            
+    </header>
+        
+        <div class="outercontainer">
+          <div class="container">
+             <form action="/search" method="GET">
+            <div class="box">
+               
+              <input type="text"  id="searchi" name="location" placeholder="Search For Country or State" />
+              
+
+              <svg
+                aria-hidden="true"
+                class="input-icon"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5ZM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0Z"
+                ></path>
+              </svg>
+               <button class="search" type="submit" onclick="hide()"><b>Search</b></button>
+            </div>
+            </form>
+            
+           
+          </div>
+        <div class="tabs" id="tabs">
+            
+             <p class="itabs" id="cricket" onclick="filter(this.id)">Cricket</p>
+             <p class="itabs" id="hockey" onclick="filter(this.id)">Hockey</p>
+             <p class="itabs" id="badminton" onclick="filter(this.id)">Badminton</p>
+             <p class="itabs"  id="football" onclick="filter(this.id)">Football</p>
+             <p class="itabs"  id="tennis" onclick="filter(this.id)">Tennis</p>
+             <p class="itabs"  id="golf" onclick="filter(this.id)">Golf</p>
+             <p class="itabs"  id="Cycling" onclick="filter(this.id)">Cycling</p>
+              <p class="itabs"  id="Hiking" onclick="filter(this.id)">Hiking</p>
+             </div>
+
+        </div>
+        </div>
+        </div>
+       
+   
+      <div class="outercard">
+     
+
+
+
+     <main>
+
+        <h2>Players nearby..</h2>
+        <div class="containercard" id="containercard">
+        
+            {{#each players}}
+            <div class="card">
+             {{!-- <div class="imgcont"><img src="{{image}}" alt=""></div> --}}
+             <h2>{{name}}</h2>
+             <p>Sport: {{sports}}</p>
+             <p>Location: {{location}}, {{state}}, {{city}}</p>
+             <p>Experience: {{skills}}</p>
+              <p>Gender: {{gender}}</p>
+             <p></p>
+             <button>Chatnow</button>
+            </div>
+            {{/each}}
+        </div>
+     </main>
+ <script src="script.js">
+    
+ </script>
+</body>
+</html>

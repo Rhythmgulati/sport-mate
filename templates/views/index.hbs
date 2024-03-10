@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports-Mate</title>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body
+  >
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <span class="navbar-text">
+            <a
+              class="nav-link active"
+              style="color: white; margin-right: 20px; cursor:pointer"
+              aria-current="page"
+
+              onclick="location.href='/'"
+              >Home</a
+            >
+            <button class="loginbtn" onclick="location.href='/login2'">Login</button>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- body starts  here rajgpt -->
+    <div class="container">
+      <img class="run" height="100px" width="120px" src="./img/play.gif" alt="" />
+      <h1 style="color: white ;width: 90vw;">Connect, Converse, Commune</h1>
+      <div class="transcontainer">
+        <p class="description">
+          Welcome to SportsMate – Your Ultimate Hub for Connecting with Fellow
+          Athletes! Dive into a vibrant community where passionate sports
+          players come together to share experiences, insights, and triumphs.
+          Whether you're a seasoned pro or just starting, SportsMate connects
+          you with like-minded individuals near you, fostering a dynamic
+          platform for chatting, strategizing, and forming bonds. Elevate your
+          game, exchange tips, and build lasting connections with athletes who
+          share your love for sports. 
+        </p>
+        <button type="button" class="createacc" onclick="location.href='/login'">Create Account</button>
+      </div>
+    </div>
+
+    <!-- card view starts here rajgpt -->
+
+    <div class="cardbox" id="cardbox">
+      <div class="box">
+        <img class="card" src="./img/pro.png" height="100px" width="50px" alt="" />
+        <p class="cardtext">
+          SignUp Now
+          <br />
+          Simple Steps
+         
+        </p>
+      </div>
+      <div class="box">
+
+        <img class="card" src="./img/chat.png" height="100px" width="50px" alt="" />
+        <p class="cardtext">
+          Converse With
+          Players
+          <br />
+          NearBy
+          Connect, Communicate, and Share Experiences
+      </div>
+      <div class="box">
+
+        <img class="card" src="./img/discuss.png" height="100px" width="50px" alt="" />
+        <p class="cardtext">
+          Discuss Your
+          <br />
+           Game 
+      </div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
+
+
+     
+    
+<!-- 
+    <div class="container">
+        <h1>Search Users</h1>
+        <form id="searchForm">
+            <input type="text" id="searchLocation" placeholder="Location" required>
+            <input type="text" id="searchSportsInterests" placeholder="Sports Interests" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </div> -->
+    
+</body>
+</html>

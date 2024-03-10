@@ -1,0 +1,80 @@
+
+
+.loginbtn{
+    background-color: white;
+    border-radius: 50px;
+    border: none ;
+    width: 100px;
+    height: 40px;
+    color: black;
+}
+
+#submit{
+  border-radius: 50px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border: none;
+  margin: 10px;
+  background: linear-gradient(to right, #fe3f5e, #fe5344);
+}
+#submit:hover{
+  background: #fe3f5f25;
+  transition: 500ms;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/dash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #f4f4f4;
+  }
+
+  .dashboard {
+    width: 80%;
+    margin: auto;
+    margin-top: 30vh;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    border: solid 2px white;
+    text-align: center;
+    border-radius: 15px;
+  }
+#email{
+  color: white;
+}
+ .title{
+    color:#fe5344;
+  }
+  .user-info {
+    text-align: center;
+  }
+
+  .user-info h2 {
+    color: #333;
+  }
+
+  .user-info p {
+    color: #666;
+  }
+
+  #profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
