@@ -62,7 +62,6 @@ button{
 
 main{
     margin: 20px ; 
-    height: 90vh;
 }
 
 .search{
@@ -165,6 +164,7 @@ button:focus{
     align-items: center;
     justify-content: center;
     width: 100vw;
+    flex-wrap: wrap;
     flex-direction: row;
 
 }

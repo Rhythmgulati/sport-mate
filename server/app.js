@@ -75,8 +75,7 @@ app.post("/register", async (req, res) => {
 
     await newuser.save();
     res.cookie.username = email;
-    const token = jwt.sign({userId:existinguser._id},"our-secret-key");
-    res.cookie('token', token, { httpOnly: true });
+   
     res.status(201).redirect("/homepage");
   } catch (error) {
     console.log(error);
@@ -115,17 +114,17 @@ app.post("/login",async (req,res)=>{
 
 app.get("/homepage",islogin ,async (req, res) => {
   try {
-    // Retrieve the user's email from the session
+  
     const userEmail = req.cookies.username;
-
-    // Use Mongoose to find a user based on the provided email
+ 
+    
     const userData = await user.findOne({ email: userEmail });
-
+    console.log(userData);
     if (!userData) {
       return res.status(404).json({ error: 'User not found' });
     }
 
-    // Render the "homepage" view with user data
+
     res.render("homepage", { userEmail, userData });
   } catch (error) {
     console.error(error);
